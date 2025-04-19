@@ -63,7 +63,7 @@ fun HomeScreen(
                         }
                     }
 
-                    HomeUiState.Editing -> TODO()
+                    HomeUiState.Editing -> FruitForm(viewModel)
                 }
             }
         },
