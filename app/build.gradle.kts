@@ -59,6 +59,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation(libs.hilt.android)
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
     ksp(libs.hilt.compiler)
     kspAndroidTest(libs.hilt.android.compiler)
+
+    annotationProcessor(libs.androidx.room.compiler)
 }
